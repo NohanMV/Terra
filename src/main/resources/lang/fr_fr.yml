@@ -1,0 +1,117 @@
+enable:
+  - "If you like Terra, please consider supporting the project on Patreon!"
+  - "You'll gain access to experimental features before they are released!"
+  - "Support the project here: https://www.patreon.com/dfsek"
+disable:
+  - "Thank you for using Terra!"
+command:
+  debug-only: "This command must be used with debug mode enabled!"
+  player-only: "Cette commande est seulement pour les joueurs!"
+  invalid: "Commande faussée. (Arguments %1$s attendus, trouvés %2$s)."
+  players-only: "Cette commande est seuelement pour les joueurs."
+  world: "Cette commande doit être utilisée dans un monde Terra!"
+  reload: "Configuration de Terra recharger."
+  version: "Ce serveur utilise la version \"%1$s\" du plugin Terra, avec l'implementation de Gaea version \"%2$s\""
+  main-menu:
+    - "--------------------Terra--------------------"
+    - "reload    - Recharge la configuration de Terra"
+    - "biome     - Donne le actuel"
+    - "ore       - Genère un filon de minerais dans votre direction(Pour le déboggage)"
+    - "save-data - Sauvegarde les donées de population"
+    - "structure - Importe et exporte les structures"
+    - "profile   - Options du profilage"
+    - "image     - Options d'Image/Menu"
+  biome:
+    biome-found: "Biome locliser en (%1$s, %2$s)"
+    unable-to-locate: "Impossible de localiser le biome."
+    invalid-radius: "Invalid radius: \"%s\""
+    invalid: "ID de biome invalide: \"%s\""
+    in: "Vous êtes en \"%s\""
+  ore:
+    main-menu:
+      - "---------------Terra/ore---------------"
+      - "Genère un filon de minerais dans votre direction."
+    out-of-range: "Block hors-limite"
+    invalid-ore: "Impossible de trouver le minerai \"%s\""
+  geometry:
+    main-menu:
+      - "---------------Terra/geometry----------------"
+      - "Panoplie de commandes pour le déboggage de géometrie voxel"
+      - "sphere       - Genère une sphère"
+      - "deformsphere - Genère une sphère déformée"
+      - "tube         - Genère un tube"
+    deform:
+      invalid-radius: "Radius invalide: \"%s\""
+      invalid-deform: "Deformation invalide: \"%s\""
+      invalid-frequency: "Fréquence invalide: \"%s\""
+    sphere:
+      invalid-radius: "Radius invalide: \"%s\""
+    tube:
+      invalid-radius: "Radius invalide: \"%s\""
+  image:
+    main-menu:
+      - "---------------Terra/image---------------"
+      - "render - Produit une image avec une largeur et longueur précise, qui peut être plus tard importée dans le monde."
+      - "gui    - Ouvre le menu de déboggage (Doit-être activer dans la configuration)"
+    gui:
+      main-menu:
+        - "-------------Terra/image/gui-------------"
+        - "raw  - Ouvre le GUI avec les données brutes du biome"
+        - "step - Recalcule les données pour montrer les bordures plus clairement"
+      debug: "Le déboggage doit être activé pour pouvoir utiliser le menu de déboggage! Le menu de déboggage n'est PAS PRET POUR LA PRODUCTION!"
+    render:
+      save: "Image sauvergardée en tant que \"%s\""
+      error: "Une erreur est survenue pendant la génération de cette image!"
+  profile:
+    main-menu:
+      - "---------------Terra/profil---------------"
+      - "start - Démarre le profileur"
+      - "stop  - Arrête le profileur"
+      - "query - Récupère les données du profileur"
+      - "reset - Réinitialise les données du profileur"
+    reset: "Le profileur à été réinitialiser."
+    start: "Le profileur à démaré."
+    stop: "Le profileur s'est éteint."
+  structure:
+    main-menu:
+      - "---------------Terra/structure---------------"
+      - "export - Exporte la séléction actuel WorlEdit en structure Terra."
+      - "load   - Charger une structure Terra"
+    invalid-radius: "Radius invalide: \"%s\""
+    invalid-rotation: "Rotation invalide: \"%s\""
+    invalid: "ID de structure invalide: \"%s\""
+    export: "Structure sauvegardée en \"%s\""
+world-config:
+  loading: "Chargement des valeurs pour le monde %s..."
+  not-found: "La configuration pour le monde \"%s\" n'a pas été trouvée. Copie de la configuration par défaut en cours."
+  using-image: "Chargement du monde à partir d'une image."
+  error: "Impossible de charger la configuration pour le monde %s"
+  done: "Chargement du monde terminer. Temps écoulé: %sms"
+config-pack:
+  loaded: "Configuration de %1$s chargée en %2$sms."
+config:
+  loaded: "%1$s a été chargé à partir du fichier %2$s"
+  loaded-all: "%1$s a été chargé %2$s(s) en %3$sms."
+  error:
+    invalid-failover: "Type de basculement invalide: \"%s\""
+    duplicate: "ID en double trouvée dans le fichier: %s"
+    file:
+      - "Erreur de configuration pour l'objet Terra. File: %1$s"
+      - "%2$s"
+      - "Corriger cela avant de continuer!"
+    generic:
+      - "Une erreur est survenue pendant le chargement des configurations."
+      - "Veuillez signaler ceci à Terra."
+warning:
+  no-population: "Aucun chunk de population n'a été chargé. Si c'est la première fois que vous lancez votre serveur avec Terra, ou si vous créer un nouveau monde, tout ceci est normal."
+error:
+  severe-config: "Une erreur de configuration importante à empecher Terra de corectement générer le terrain aux coordonnées: %1$s, %2$s. Veuillez verifier vos erreurs dans votre configuration. N'importe quelle erreur de configuration sera signalé au-dessus."
+debug:
+  data-save: "Sauvergade de population pour le monde \"%s\""
+use-paper:
+  - "Vous semblez utiliser Spigot/CraftBukkit."
+  - "Même si Terra &omarche&r sur Spigot, certaine fonctionnalitées seront perdues. (Terra na pas été testé sur CraftBukkit; aucune aide ne sera proposé pour celui-ci)."
+  - "To get the most out of Terra, please switch to Paper."
+  - "De plus, Paper offre une large gamme d'améliorations par rapport à Spigot, et tout les plugins compatibles sur Spigot devraient être eux-aussi compatibles avec Paper!"
+  - "Pour avoir la meilleur expérience avec Terra, et tout vos plugins, nous vous recommendons Paper."
+  - "Apprenez-en plus directement sur le site de Paper: https://papermc.io/"
